@@ -6,9 +6,10 @@ DotEnv.load()
 Config.checkEnvVars()
 
 // swiftlint:disable:next force_try
-WorkshopManager.update()
 ConstitutionManager.update()
 BlogPostManager.update()
+WorkshopManager.update()
+WorkshopManager.startPoll()
 
 // This call never returns
 serveWebsite()
